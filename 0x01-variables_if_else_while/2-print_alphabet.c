@@ -1,31 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - the main function
+ * main - This is the main function
  *
- * Return: 0 on success
+ * Return: It is 0
  */
+
 int main(void)
 {
-	int i;
-	int j;
+	char i;
 
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 1; j < 10; j++)
-		{
-			if (i < j && i != j)
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i + j != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
